@@ -1,0 +1,44 @@
+body {
+  font-family: var(--font-main);
+  font-size: 16px;
+  line-height: 1.6;
+  background: #fff;
+  color: var(--color-text-main);
+  font-variant-ligatures: none;
+  -webkit-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  text-size-adjust: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  overflow-anchor: none;
+  overflow-y: scroll;
+}
+
+button {
+  touch-action: manipulation;
+  color: var(--color-text-main);
+}
+
+.hidden {
+  display: none !important;
+}
+
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}
+
+.sidebar-enter-active, .sidebar-leave-active {
+  transition: opacity .2s ease;
+}
+
+.sidebar-enter, .sidebar-leave-to {
+  opacity: 0;
+}
+
+.pageFade-enter-active, .pageFade-leave-active {
+  transition: opacity .2s ease;
+}
+
+.pageFade-enter, .pageFade-leave-to {
+  opacity: 0;
+}

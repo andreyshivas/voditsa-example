@@ -1,0 +1,20 @@
+- /.github/
+- /assets/
+- /components/
+- /node_modules/
+- /helpers/
+- /layouts/
+- /middleware/
+- /pages/
+- /plugins/
+- /store/
+##
+- .editorconfig
+- .env
+- jsconfig.json
+- README.md
+- .gitignore
+- schema.json
+- vercel.json
+- voditsa.by.conf
+- .rsync-filter

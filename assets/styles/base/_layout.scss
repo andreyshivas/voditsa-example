@@ -1,0 +1,98 @@
+.pageWrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  &__content {
+    padding-top: 80px;
+    flex: 1 0 auto;
+
+    @media screen and (max-width: 767px) {
+      padding-top: 60px;
+    }
+
+    &--empty {
+      padding: 0 !important;
+    }
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 1250px;
+  padding: 0 40px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 767px) {
+    padding: 0 20px;
+  }
+}
+
+#__nuxt,
+#__layout {
+  height: 100%;
+}
+
+.textPage {
+  padding: 60px 0;
+
+  @media screen and (max-width: 767px) {
+    padding: 40px 0;
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  // .container {
+  //   max-width: 870px;
+  // }
+}
+
+.profilePage {
+  padding: 60px 0;
+
+  @media screen and (max-width: 767px) {
+    padding: 40px 0;
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+    gap: 80px;
+    max-width: 1250px;
+    padding: 0 40px;
+    margin: 0 auto;
+
+    @media screen and (max-width: 1023px) {
+      display: block;
+      padding: 0;
+    }
+  }
+
+  &__sidebar {
+    min-width: 250px;
+
+    @media screen and (max-width: 1023px) {
+      min-width: auto;
+    }
+  }
+
+  &__content {
+    @media screen and (max-width: 1023px) {
+      padding: 40px;
+    }
+
+    @media screen and (max-width: 767px) {
+      padding: 20px;
+    }
+  }
+
+  &__info-text {
+    word-wrap: break-word;
+  }
+}

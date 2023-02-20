@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "name": "voditsa",
+  "builds": [
+    {
+      "src": "nuxt.config.js",
+      "use": "@nuxtjs/vercel-builder",
+      "config": {
+        "serverFiles": [".nuxt/dist/sitemap-routes.json", "api/storyblok.js", "api/payment.js", "api/evropochta.js", "api/mail.js", "api/sms.js"]
+      }
+    }
+  ]
+}

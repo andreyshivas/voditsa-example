@@ -1,0 +1,34 @@
+.moreLink {
+  display: inline-flex;
+  align-items: center;
+  color: var(--color-text-main);
+  text-decoration: none;
+
+  &__arrow {
+    margin-left: 10px;
+    margin-top: 8px;
+    width: 30px;
+    height: 30px;
+    background: url('/images/ico-arrow-link.svg') no-repeat center center;
+    background-size: contain;
+
+    @media screen and (max-width: 767px) {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &__text {
+    background-size: 0 100%;
+    color: #000;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(#fff0 calc(100% - 1px), #000 1px);
+    transition: background-size 0.3s;
+  }
+
+  &:hover {
+    .moreLink__text {
+      background-size: 100% 100%;
+    }
+  }
+}
